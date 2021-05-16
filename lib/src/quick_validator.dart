@@ -24,19 +24,17 @@ class QuickGenericValidator<T> {
 }
 
 class QuickTextValidator extends QuickGenericValidator<String> {
-  final bool isRequired;
   final bool? isEmail;
   final bool? isNumber;
   final int? hasMinLength;
   final int? hasMaxLength;
-  final String? Function(String? value)? extraValidation;
 
   QuickTextValidator({
-    this.isRequired = true,
+    bool isRequired = true,
+    String? Function(String? value)? extraValidation,
     this.isEmail,
     this.isNumber,
     this.hasMinLength,
-    this.extraValidation,
     this.hasMaxLength,
   }) : super(
           isRequired: isRequired,
