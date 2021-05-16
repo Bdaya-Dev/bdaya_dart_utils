@@ -1,6 +1,6 @@
 name: bdaya_utils
 description: Utilities used at bdaya development (includes validation...)
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/Bdaya-Dev/bdaya_dart_utils
 
 environment:
